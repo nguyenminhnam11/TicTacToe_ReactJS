@@ -1,0 +1,26 @@
+.toggle {
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 100rem;
+    background: #C6C4C6;
+    margin: 25px;
+    cursor: pointer;
+    transition: all 0.1s linear ;
+}
+
+.toggle.active {
+    background: #53B0F8;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 100rem;
+    transition: all 0.1s linear ;
+}
+
+.spinner.active {
+    transform: translateX(50px);
+}

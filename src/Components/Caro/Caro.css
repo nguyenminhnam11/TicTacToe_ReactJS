@@ -1,0 +1,61 @@
+.caro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caro h1 {
+    margin-top: 10px;
+    color: #66baff;
+    text-shadow: 0 0 20px #66baff;
+}
+
+.board {
+    margin: 25px;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.cell {
+    background: #FFf;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bold;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cell.is-x {
+    color: red;
+}
+
+.cell.is-o {
+    color: blue;
+}
+
+button {
+    background: #0A1A3F;
+    border: none;
+    padding: 25px 40px;
+    font-size: 20px;
+    color: #FFf;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+button:hover {
+    transform: scale(1.1, 1.1)
+}
+
+button:active {
+    transform: scale(1,1);
+}
